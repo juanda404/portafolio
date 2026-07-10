@@ -40,12 +40,12 @@
     -->
     <a class="skip-link" href="#main-content">Menu</a>
 
-    <header>
-      <div>
-        <h1>Juan David Santamaria</h1>
-        <p role="doc-subtitle">Frontend Engineer</p>
+    <header class="navbar">
+      <div class="navbar__brand">
+        <h1 class="navbar__name">Juan David Santamaria</h1>
+        <p  class="navbar__subtitle"role="doc-subtitle">Frontend Engineer</p>
       </div>
-      <nav aria-label="Menú principal">
+      <nav aria-label="Menú principal" class="navbar__menu">
         <ul>
           <li><a href="#about">About me</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -56,23 +56,23 @@
     </header>
 
     <main id="main-content">
-      <aside aria-labelledby="hard-skills-heading">
-        <h2 id="hard-skills-heading">Hard Skills</h2>
-        <ul>
+      <aside class="hard__skills" aria-labelledby="hard-skills-heading">
+        <h2  class="hard-skills__title"  id="hard-skills-heading">Hard Skills</h2>
+        <ul class="hard-skills__list">
           <li>Desarrollo y sistemas: HTML5 · CSS3 · JavaScript · .NET · C#</li>
           <li>Datos y análisis: SQL · Excel avanzado (macros, análisis)</li>
           <li>Sistemas / CMS: Sitefinity</li>
           <li>Control de versiones: Git · GitHub</li>
         </ul>
       </aside>
-      <section id="about" aria-labelledby="about-heading">
-        <figure>
-          <img src="assets/devjdsg1.png" alt="Juan David frente a su computador" width="200" height="200" />
-          <figcaption>Juan programando</figcaption>
+      <section class="about" id="about" aria-labelledby="about-heading">
+        <figure class="about__figure">
+          <img class="about__image" src="assets/devjdsg1.png" alt="Juan David frente a su computador" width="200" height="200" />
+          <figcaption class="about__text">Juan programando</figcaption>
         </figure>
-        <div>
-          <h3 id="about-heading">About me</h3>
-          <p>
+        <div class="about__content">
+          <h3 class="about__title" id="about-heading">About me</h3>
+          <p class="about__text">
             I'm Juan David, a <strong>Frontend Developer</strong> passionate about
             creating modern web experiences.... Currently, I'm a Junior Front-End
             Engineer at AOS, working on a project basic. I contribute to the
@@ -86,14 +86,13 @@
         </div>
       </section>
 
-      <section id="experience" aria-labelledby="experience-heading">
-        <h3 id="experience-heading">Experience</h3>
-
-        <div>
-          <h4>Frontend Developer</h4>
+      <section class="experience" id="experience" aria-labelledby="experience-heading">
+        <h3 class="experience__title" id="experience-heading">Experience</h3>
+        <div class="experience__item">
+          <h4 class="experience__role">Frontend Developer</h4>
           <!-- Las fechas no son encabezados: <time> es lo semánticamente correcto -->
-          <p><time datetime="2024-01">Jan 2024 - Present</time></p>
-          <p>
+          <p class="experience__date"><time datetime="2024-01">Jan 2024 - Present</time></p>
+          <p class="experience__descripcion">
             Building responsive interfaces with React and Tailwind CSS. Focused on
             clean code and good UX.
           </p>
@@ -109,39 +108,42 @@
         </div>
       </section>
 
-      <section id="projects" aria-labelledby="projects-heading">
-        <h3 id="projects-heading">Projects</h3>
-        <p>Short description of section</p>
-        <div>
-          <article>
-            <figure>
+      <section class="projects" id="projects" aria-labelledby="projects-heading">
+        <h3 class="projects__title" id="projects-heading">Projects</h3>
+        <p class="projects__intro">Short description of section</p>
+        <div class="projects__list">
+          <article class="projects__card">
+            <figure class="projects__card-figure">
               <img
+                class="projects__card-image"
                 src="/assets/jdstoreapp.png"
                 alt="JD Store App: catálogo de productos de una tienda en línea"
               />
             </figure>
-            <div>
-              <h4>JD Store APP</h4>
-              <p>
+            <div class="projects__card-content">
+              <h4 class="projects__card-title">JD Store APP</h4>
+              <p class="projects__card-description">
                 A modern and responsive e-commerce web application built with
                 Vanilla JavaScript that consumes the Platzi Fake Store API. This
                 project demonstrates clean API integration, dynamic content
                 rendering, and modern web development practices.
               </p>
-              <ul>
+              <ul class="projects__card-tech-list">
                 <li>Vanilla JS</li>
                 <li>CSS3</li>
                 <li>HTML5</li>
                 <li>FETCH API</li>
               </ul>
-              <div>
+              <div class="projects__card-links">
                 <a
+                  class="projects__card-link"
                   href="https://github.com/juanda404/Store1"
                   target="_blank"
                   rel="noopener noreferrer"
                   >GitHub<span class="sr-only"> (abre en una pestaña nueva)</span></a
                 >
                 <a
+                  class="projects__card-link"
                   href="https://github.com/juanda404/Store1"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -151,37 +153,40 @@
             </div>
           </article>
 
-          <article>
-            <figure>
+          <article class="projects__card">
+            <figure class="projects__card-figure">
               <img
+                class="projects__card-image"
                 src="/assets/TaskManagerAPP.png"
                 alt="Task Manager App: lista de tareas pendientes y completadas"
               />
             </figure>
-            <div>
-              <h4>Task Manager APP</h4>
-              <p>
+            <div class="projects__card-content">
+              <h4 class="projects__card-title">Task Manager APP</h4>
+              <p class="projects__card-description">
                 A simple, accessible, and modern task management application
                 built with vanilla JavaScript, HTML, and CSS. Organize your
                 daily tasks with an intuitive interface and persistent local
                 storage.
               </p>
 
-              <ul>
+              <ul class="projects__card-tech-list">
                 <li>Vanilla JS</li>
                 <li>CSS3</li>
                 <li>HTML5</li>
                 <li>LocalStorage API</li>
               </ul>
 
-              <div>
+              <div class="projects__card-links">
                 <a
+                  class="projects__card-link"
                   href="https://github.com/juanda404/Task-Manager-JavaScript"
                   target="_blank"
                   rel="noopener noreferrer"
                   >GitHub<span class="sr-only"> (abre en una pestaña nueva)</span></a
                 >
                 <a
+                 class="projects__card-link"
                   href="https://taskmanagerjavas.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -191,34 +196,37 @@
             </div>
           </article>
 
-          <article>
-            <figure>
+          <article class="projects__card">
+            <figure class="projects__card-figure">
               <img
+                class="projects__card-image"
                 src="/assets/Todolist.png"
                 alt="To-Do App: formulario para agregar tareas y lista con checkboxes"
               />
             </figure>
-            <div>
-              <h4>To-Do App</h4>
-              <p>
+            <div class="projects__card-content">
+              <h4 class="projects__card-title">To-Do App</h4>
+              <p class="projects__card-description">
                 A modern task management application built with React, allowing
                 you to create, complete, and delete tasks intuitively.
               </p>
 
-              <ul>
+              <ul class="projects__card-tech-list">
                 <li>React JS</li>
                 <li>CSS3</li>
                 <li>JavaScript</li>
               </ul>
 
-              <div>
-                <a
+              <div class="projects__card-links">
+                <a  
+                  class="projects__card-link"
                   href="https://github.com/juanda404/TODOMACHINE"
                   target="_blank"
                   rel="noopener noreferrer"
                   >GitHub<span class="sr-only"> (abre en una pestaña nueva)</span></a
                 >
                 <a
+                  class="projects__card-link"
                   href="https://juanda404.github.io/TODOMACHINE/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -230,16 +238,17 @@
         </div>
       </section>
 
-      <section id="resume" aria-labelledby="resume-heading">
-        <h3 id="resume-heading">Resume</h3>
-        <p>
+      <section class="resume" id="resume" aria-labelledby="resume-heading">
+        <h3 class="resume__title"  id="resume-heading">Resume</h3>
+        <p class="resume__text">
           You can view or dowload my resume in PDF format by clicking the button
           below.
         </p>
-        <a href="/assets/documents/CVJDSG1.pdf" download aria-label="Descargar CV en PDF">
+        <a class="resume__link" href="/assets/documents/CVJDSG1.pdf" download aria-label="Descargar CV en PDF">
           <span aria-hidden="true">📄</span> CV
         </a>
       </section>
+      <button class="buton1">Contactame</button>
     </main>
 
     <footer>
