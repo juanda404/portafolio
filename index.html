@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- 
+    ========================================
+    METADATOS ESENCIALES
+    ========================================
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Básico -->
+    <title>
+      Juan David Santamaria - Mi Perfil Personal | Desarrollador Web
+    </title>
+    <meta
+      name="description"
+      content="Perfil personal de Juan David. Desarrollador Web en HTML, CSS y las mejores prácticas del desarrollo web moderno."
+    />
+    <meta
+      name="keywords"
+      content="perfil personal, desarrollador web, portfolio, HTML, CSS, desarrollo web"
+    />
+    <meta name="author" content="Juan Santamaria" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/favicon_io/site.webmanifest" />
+  </head>
+  <body>
+    <!--
+      SKIP LINK: permite a usuarios de teclado / lectores de pantalla
+      saltar el menú de navegación e ir directo al contenido principal.
+      Debe ser el primer elemento enfocable del <body>.
+      Nota CSS necesaria (no incluida, solo a nivel de maquetado):
+        .skip-link { position:absolute; left:-9999px; }
+        .skip-link:focus { position:static; left:auto; }
+    -->
+    <a class="skip-link" href="#main-content">Menu</a>
+
+    <header>
+      <div>
+        <h1>Juan David Santamaria</h1>
+        <p role="doc-subtitle">Frontend Engineer</p>
+      </div>
+      <nav aria-label="Menú principal">
+        <ul>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#resume">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <aside aria-labelledby="hard-skills-heading">
+        <h2 id="hard-skills-heading">Hard Skills</h2>
+        <ul>
+          <li>Desarrollo y sistemas: HTML5 · CSS3 · JavaScript · .NET · C#</li>
+          <li>Datos y análisis: SQL · Excel avanzado (macros, análisis)</li>
+          <li>Sistemas / CMS: Sitefinity</li>
+          <li>Control de versiones: Git · GitHub</li>
+        </ul>
+      </aside>
+      <section id="about" aria-labelledby="about-heading">
+        <figure>
+          <img src="assets/devjdsg1.png" alt="Juan David frente a su computador" width="200" height="200" />
+          <figcaption>Juan programando</figcaption>
+        </figure>
+        <div>
+          <h3 id="about-heading">About me</h3>
+          <p>
+            I'm Juan David, a <strong>Frontend Developer</strong> passionate about
+            creating modern web experiences.... Currently, I'm a Junior Front-End
+            Engineer at AOS, working on a project basic. I contribute to the
+            updating the Fogafin website, which is managed by the Sitefinity CMS.
+            In the past, I had the opportunity to work at the Office of the
+            secretary of Mobility in Cali, where I simultanously developed
+            software as a freelancer for a personal project. In my spare time, I'm
+            usually go to the gym,read,listen to music, or watch movies at home.
+            On weekends,I enjoy mountain biking.
+          </p>
+        </div>
+      </section>
+
+      <section id="experience" aria-labelledby="experience-heading">
+        <h3 id="experience-heading">Experience</h3>
+
+        <div>
+          <h4>Frontend Developer</h4>
+          <!-- Las fechas no son encabezados: <time> es lo semánticamente correcto -->
+          <p><time datetime="2024-01">Jan 2024 - Present</time></p>
+          <p>
+            Building responsive interfaces with React and Tailwind CSS. Focused on
+            clean code and good UX.
+          </p>
+        </div>
+
+        <div>
+          <h4>Developer</h4>
+          <p><time datetime="2024-01/2024-11">January - November 2024</time></p>
+          <p>
+            Learning frontend technologies including HTML, CSS, JavaScript, and
+            React through projects and online resources.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-heading">
+        <h3 id="projects-heading">Projects</h3>
+        <p>Short description of section</p>
+        <div>
+          <article>
+            <figure>
+              <img
+                src="/assets/jdstoreapp.png"
+                alt="JD Store App: catálogo de productos de una tienda en línea"
+              />
+            </figure>
+            <div>
+              <h4>JD Store APP</h4>
+              <p>
+                A modern and responsive e-commerce web application built with
+                Vanilla JavaScript that consumes the Platzi Fake Store API. This
+                project demonstrates clean API integration, dynamic content
+                rendering, and modern web development practices.
+              </p>
+              <ul>
+                <li>Vanilla JS</li>
+                <li>CSS3</li>
+                <li>HTML5</li>
+                <li>FETCH API</li>
+              </ul>
+              <div>
+                <a
+                  href="https://github.com/juanda404/Store1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub<span class="sr-only"> (abre en una pestaña nueva)</span></a
+                >
+                <a
+                  href="https://github.com/juanda404/Store1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Demo<span class="sr-only"> (abre en una pestaña nueva)</span></a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <figure>
+              <img
+                src="/assets/TaskManagerAPP.png"
+                alt="Task Manager App: lista de tareas pendientes y completadas"
+              />
+            </figure>
+            <div>
+              <h4>Task Manager APP</h4>
+              <p>
+                A simple, accessible, and modern task management application
+                built with vanilla JavaScript, HTML, and CSS. Organize your
+                daily tasks with an intuitive interface and persistent local
+                storage.
+              </p>
+
+              <ul>
+                <li>Vanilla JS</li>
+                <li>CSS3</li>
+                <li>HTML5</li>
+                <li>LocalStorage API</li>
+              </ul>
+
+              <div>
+                <a
+                  href="https://github.com/juanda404/Task-Manager-JavaScript"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub<span class="sr-only"> (abre en una pestaña nueva)</span></a
+                >
+                <a
+                  href="https://taskmanagerjavas.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Demo<span class="sr-only"> (abre en una pestaña nueva)</span></a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <figure>
+              <img
+                src="/assets/Todolist.png"
+                alt="To-Do App: formulario para agregar tareas y lista con checkboxes"
+              />
+            </figure>
+            <div>
+              <h4>To-Do App</h4>
+              <p>
+                A modern task management application built with React, allowing
+                you to create, complete, and delete tasks intuitively.
+              </p>
+
+              <ul>
+                <li>React JS</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+              </ul>
+
+              <div>
+                <a
+                  href="https://github.com/juanda404/TODOMACHINE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub<span class="sr-only"> (abre en una pestaña nueva)</span></a
+                >
+                <a
+                  href="https://juanda404.github.io/TODOMACHINE/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Demo<span class="sr-only"> (abre en una pestaña nueva)</span></a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="resume" aria-labelledby="resume-heading">
+        <h3 id="resume-heading">Resume</h3>
+        <p>
+          You can view or dowload my resume in PDF format by clicking the button
+          below.
+        </p>
+        <a href="/assets/documents/CVJDSG1.pdf" download aria-label="Descargar CV en PDF">
+          <span aria-hidden="true">📄</span> CV
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Juan David. Built with HTML & CSS</p>
+    </footer>
+  </body>
+</html>
