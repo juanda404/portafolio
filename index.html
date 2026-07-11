@@ -22,28 +22,40 @@
     />
     <meta name="author" content="Juan Santamaria" />
     <meta name="robots" content="index, follow" />
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon_io/favicon-16x16.png"
+    />
     <link rel="manifest" href="/assets/favicon_io/site.webmanifest" />
-    <link rel="stylesheet" href="Style.css">
-  </head>
-  <body>
-    <!--
-      SKIP LINK: permite a usuarios de teclado / lectores de pantalla
-      saltar el menú de navegación e ir directo al contenido principal.
-      Debe ser el primer elemento enfocable del <body>.
-      Nota CSS necesaria (no incluida, solo a nivel de maquetado):
-        .skip-link { position:absolute; left:-9999px; }
-        .skip-link:focus { position:static; left:auto; }
-    -->
-    <a class="skip-link" href="#main-content">Menu</a>
+    <link rel="stylesheet" href="Style.css" />
 
-    <header class="navbar">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="container">
+    <header class="navbar item1">
       <div class="navbar__brand">
         <h1 class="navbar__name">Juan David Santamaria</h1>
-        <p  class="navbar__subtitle"role="doc-subtitle">Frontend Engineer</p>
+        <p class="navbar__subtitle" role="doc-subtitle">Frontend Engineer</p>
+        <a class="skip-link" href="#main-content">Menu</a>
       </div>
       <nav aria-label="Menú principal" class="navbar__menu">
         <ul>
@@ -54,64 +66,169 @@
         </ul>
       </nav>
     </header>
+    <aside class="hard__skills item2" aria-labelledby="hard-skills-heading">
+      <h2 class="hard-skills__title" id="hard-skills-heading">Hard Skills</h2>
 
-    <main id="main-content">
-      <aside class="hard__skills" aria-labelledby="hard-skills-heading">
-        <h2  class="hard-skills__title"  id="hard-skills-heading">Hard Skills</h2>
-        <ul class="hard-skills__list">
-          <li>Desarrollo y sistemas: HTML5 · CSS3 · JavaScript · .NET · C#</li>
-          <li>Datos y análisis: SQL · Excel avanzado (macros, análisis)</li>
-          <li>Sistemas / CMS: Sitefinity</li>
-          <li>Control de versiones: Git · GitHub</li>
-        </ul>
-      </aside>
+      <div class="hard-skills__category">
+        <h3>Frontend</h3>
+
+        <div class="hard-skills__badges">
+          <span><i class="devicon-html5-plain colored"></i> HTML5</span>
+
+          <span><i class="devicon-css3-plain colored"></i> CSS3</span>
+
+          <span
+            ><i class="devicon-javascript-plain colored"></i> JavaScript</span
+          >
+
+          <span><i class="devicon-react-original colored"></i> React</span>
+
+          <span
+            ><i class="devicon-tailwindcss-original colored"></i> Tailwind</span
+          >
+        </div>
+      </div>
+
+      <div class="hard-skills__category">
+        <h3>Backend</h3>
+
+        <div class="hard-skills__badges">
+          <span><i class="devicon-csharp-plain colored"></i> C#</span>
+
+          <span><i class="devicon-dot-net-plain colored"></i> .NET</span>
+        </div>
+      </div>
+
+      <div class="hard-skills__category">
+        <h3>Database</h3>
+
+        <div class="hard-skills__badges">
+          <span
+            ><i class="devicon-microsoftsqlserver-plain colored"></i> SQL
+            Server</span
+          >
+        </div>
+      </div>
+
+      <div class="hard-skills__category">
+        <h3>Tools</h3>
+
+        <div class="hard-skills__badges">
+          <span><i class="devicon-git-plain colored"></i> Git</span>
+
+          <span><i class="devicon-github-original"></i> GitHub</span>
+
+          <span><i class="devicon-vscode-plain colored"></i> VS Code</span>
+
+          <span><i class="devicon-vitejs-plain colored"></i> Vite</span>
+        </div>
+      </div>
+    </aside>
+    <main class="item3" id="main-content">
       <section class="about" id="about" aria-labelledby="about-heading">
         <figure class="about__figure">
-          <img class="about__image" src="assets/devjdsg1.png" alt="Juan David frente a su computador" width="200" height="200" />
+          <img
+            class="about__image"
+            src="assets/devjdsg1.png"
+            alt="Juan David frente a su computador"
+            width="200"
+            height="200"
+          />
           <figcaption class="about__text">Juan programando</figcaption>
         </figure>
         <div class="about__content">
-          <h3 class="about__title" id="about-heading">About me</h3>
+          <h2 class="about__title" id="about-heading">About me</h2>
           <p class="about__text">
-            I'm Juan David, a <strong>Frontend Developer</strong> passionate about
-            creating modern web experiences.... Currently, I'm a Junior Front-End
-            Engineer at AOS, working on a project basic. I contribute to the
-            updating the Fogafin website, which is managed by the Sitefinity CMS.
-            In the past, I had the opportunity to work at the Office of the
-            secretary of Mobility in Cali, where I simultanously developed
-            software as a freelancer for a personal project. In my spare time, I'm
-            usually go to the gym,read,listen to music, or watch movies at home.
-            On weekends,I enjoy mountain biking.
+            I'm Juan David, a <strong>Frontend Developer</strong> passionate
+            about creating modern web experiences.... Currently, I'm a Junior
+            Front-End Engineer at AOS, working on a project basic. I contribute
+            to the updating the Fogafin website, which is managed by the
+            Sitefinity CMS. In the past, I had the opportunity to work at the
+            Office of the secretary of Mobility in Cali, where I simultanously
+            developed software as a freelancer for a personal project. In my
+            spare time, I'm usually go to the gym,read,listen to music, or watch
+            movies at home. On weekends,I enjoy mountain biking.
           </p>
         </div>
       </section>
 
-      <section class="experience" id="experience" aria-labelledby="experience-heading">
-        <h3 class="experience__title" id="experience-heading">Experience</h3>
+      <section
+        class="experience"
+        id="experience"
+        aria-labelledby="experience-heading"
+      >
+        <h2 class="experience__title" id="experience-heading">Experience</h2>
         <div class="experience__item">
-          <h4 class="experience__role">Frontend Developer</h4>
+          <h3 class="experience__role">Frontend Developer</h3>
           <!-- Las fechas no son encabezados: <time> es lo semánticamente correcto -->
-          <p class="experience__date"><time datetime="2024-01">Jan 2024 - Present</time></p>
+          <p class="experience__date">
+            <time datetime="2024-01">Jan 2024 - Present</time>
+          </p>
           <p class="experience__descripcion">
-            Building responsive interfaces with React and Tailwind CSS. Focused on
-            clean code and good UX.
+            Building responsive interfaces with React and Tailwind CSS. Focused
+            on clean code and good UX.
           </p>
         </div>
 
-        <div>
-          <h4>Developer</h4>
+        <div class="experience__item">
+          <h3 class="experience__role">Developer</h3>
           <p><time datetime="2024-01/2024-11">January - November 2024</time></p>
-          <p>
+          <p class="experience__descripcion">
             Learning frontend technologies including HTML, CSS, JavaScript, and
             React through projects and online resources.
           </p>
         </div>
       </section>
 
-      <section class="projects" id="projects" aria-labelledby="projects-heading">
-        <h3 class="projects__title" id="projects-heading">Projects</h3>
+      <section
+        class="projects"
+        id="projects"
+        aria-labelledby="projects-heading"
+      >
+        <h2 class="projects__title" id="projects-heading">Projects</h2>
         <p class="projects__intro">Short description of section</p>
         <div class="projects__list">
+          <article class="projects__card">
+            <figure class="projects__card-figure">
+              <img
+                class="projects__card-image"
+                src="/assets/chatbot.png"
+                alt="JD Store App: catálogo de productos de una tienda en línea"
+              />
+            </figure>
+            <div class="projects__card-content">
+              <h3 class="projects__card-title">ChatBot Whatsapp</h3>
+              <p class="projects__card-description">
+                A WhatsApp chatbot for the Parques de Castilla 2 residential complex, built using Node.js and Express. The bot offers a menu covering community guidelines, schedules, and administration contact details, as well as intelligent query support powered by Gemini (AI) based on a PDF community handbook.
+              </p>
+              <ul class="projects__card-tech-list">
+                <li>API WHatsapp</li>
+                <li>Node JS</li>
+                <li>Express</li>
+                <li>IA GEMINI</li>
+              </ul>
+              <div class="projects__card-links">
+                <a
+                  class="projects__card-link"
+                  href="https://github.com/juanda404/PCCASTILLACHATBOT/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub<span class="sr-only">
+                    (abre en una pestaña nueva)</span
+                  ></a
+                >
+                <a
+                  class="projects__card-link"
+                  href="https://wa.me/57301716815"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Demo<span class="sr-only">
+                    (abre en una pestaña nueva)</span
+                  ></a
+                >
+              </div>
+            </div>
+          </article>
           <article class="projects__card">
             <figure class="projects__card-figure">
               <img
@@ -121,7 +238,7 @@
               />
             </figure>
             <div class="projects__card-content">
-              <h4 class="projects__card-title">JD Store APP</h4>
+              <h3 class="projects__card-title">JD Store APP</h3>
               <p class="projects__card-description">
                 A modern and responsive e-commerce web application built with
                 Vanilla JavaScript that consumes the Platzi Fake Store API. This
@@ -140,19 +257,22 @@
                   href="https://github.com/juanda404/Store1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >GitHub<span class="sr-only"> (abre en una pestaña nueva)</span></a
+                  >GitHub<span class="sr-only">
+                    (abre en una pestaña nueva)</span
+                  ></a
                 >
                 <a
                   class="projects__card-link"
                   href="https://github.com/juanda404/Store1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Live Demo<span class="sr-only"> (abre en una pestaña nueva)</span></a
+                  >Live Demo<span class="sr-only">
+                    (abre en una pestaña nueva)</span
+                  ></a
                 >
               </div>
             </div>
           </article>
-
           <article class="projects__card">
             <figure class="projects__card-figure">
               <img
@@ -162,7 +282,7 @@
               />
             </figure>
             <div class="projects__card-content">
-              <h4 class="projects__card-title">Task Manager APP</h4>
+              <h3 class="projects__card-title">Task Manager APP</h3>
               <p class="projects__card-description">
                 A simple, accessible, and modern task management application
                 built with vanilla JavaScript, HTML, and CSS. Organize your
@@ -183,14 +303,18 @@
                   href="https://github.com/juanda404/Task-Manager-JavaScript"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >GitHub<span class="sr-only"> (abre en una pestaña nueva)</span></a
+                  >GitHub<span class="sr-only">
+                    (abre en una pestaña nueva)</span
+                  ></a
                 >
                 <a
-                 class="projects__card-link"
+                  class="projects__card-link"
                   href="https://taskmanagerjavas.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Live Demo<span class="sr-only"> (abre en una pestaña nueva)</span></a
+                  >Live Demo<span class="sr-only">
+                    (abre en una pestaña nueva)</span
+                  ></a
                 >
               </div>
             </div>
@@ -205,7 +329,7 @@
               />
             </figure>
             <div class="projects__card-content">
-              <h4 class="projects__card-title">To-Do App</h4>
+              <h3 class="projects__card-title">To-Do App</h3>
               <p class="projects__card-description">
                 A modern task management application built with React, allowing
                 you to create, complete, and delete tasks intuitively.
@@ -218,19 +342,23 @@
               </ul>
 
               <div class="projects__card-links">
-                <a  
+                <a
                   class="projects__card-link"
                   href="https://github.com/juanda404/TODOMACHINE"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >GitHub<span class="sr-only"> (abre en una pestaña nueva)</span></a
+                  >GitHub<span class="sr-only">
+                    (abre en una pestaña nueva)</span
+                  ></a
                 >
                 <a
                   class="projects__card-link"
                   href="https://juanda404.github.io/TODOMACHINE/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Live Demo<span class="sr-only"> (abre en una pestaña nueva)</span></a
+                  >Live Demo<span class="sr-only">
+                    (abre en una pestaña nueva)</span
+                  ></a
                 >
               </div>
             </div>
@@ -239,19 +367,23 @@
       </section>
 
       <section class="resume" id="resume" aria-labelledby="resume-heading">
-        <h3 class="resume__title"  id="resume-heading">Resume</h3>
+        <h2 class="resume__title" id="resume-heading">Resume</h2>
         <p class="resume__text">
           You can view or dowload my resume in PDF format by clicking the button
           below.
         </p>
-        <a class="resume__link" href="/assets/documents/CVJDSG1.pdf" download aria-label="Descargar CV en PDF">
+        <a
+          class="resume__link"
+          href="/assets/documents/CVJDSG1.pdf"
+          download
+          aria-label="Descargar CV en PDF"
+        >
           <span aria-hidden="true">📄</span> CV
         </a>
       </section>
-      <button class="buton1">Contactame</button>
+      <button class="button">Contactame</button>
     </main>
-
-    <footer>
+    <footer class="item4">
       <p>© 2026 Juan David. Built with HTML & CSS</p>
     </footer>
   </body>
