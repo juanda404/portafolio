@@ -6,6 +6,9 @@ This repository contains the source code for my personal portfolio website, buil
 
 I am Juan David Santamaria, a Frontend Developer passionate about building modern, responsive, and user-friendly web experiences. This project serves as a central place to share my skills, work, and contact information.
 
+<img width="999" height="793" alt="image" src="https://github.com/user-attachments/assets/b24e0ecf-887e-4e0c-8793-fc8edaf80113" />
+
+
 ## Features
 
 - Responsive personal landing page
