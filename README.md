@@ -42,7 +42,7 @@ python3 -m http.server 8000
 Then visit:
 
 ```text
-http://localhost:8000
+https://jdsg.netlify.app/
 ```
 
 ## Deployment
