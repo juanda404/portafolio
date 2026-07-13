@@ -1144,6 +1144,65 @@ main {
 }
 
 /*==================================================
+            LANDING PAGES
+==================================================*/
+
+.landing-pages {
+    margin-top: 5rem;
+}
+
+.landing-pages__intro {
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+}
+
+.landing-pages__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.landing-pages__item {
+    background: rgba(255, 255, 255, .04);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 1.8rem;
+    box-shadow: var(--shadow-md);
+    transition: .35s ease;
+}
+
+.landing-pages__item:hover {
+    transform: translateY(-8px);
+    border-color: rgba(56, 189, 248, .35);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .28);
+}
+
+.landing-pages__tag {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: .4rem .75rem;
+    border-radius: 999px;
+    background: rgba(20, 184, 166, .16);
+    color: var(--secondary);
+    font-size: .78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+.landing-pages__name {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: .8rem;
+}
+
+.landing-pages__description {
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+/*==================================================
                 FOOTER
 ==================================================*/
 
