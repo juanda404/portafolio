@@ -1,61 +1,56 @@
-# Personal Portfolio Website
+# Portafolio Personal
 
-This repository contains the source code for my personal portfolio website, built with HTML and CSS. The site presents my professional profile, experience, featured projects, and a downloadable resume.
+Este repositorio contiene el código fuente del portafolio personal de Juan David Santamaria. El sitio está creado con HTML, CSS y JavaScript, y muestra información profesional, experiencia, proyectos destacados y un enlace para descargar el currículo.
 
-## About
+## Descripción
 
-I am Juan David Santamaria, a Frontend Developer passionate about building modern, responsive, and user-friendly web experiences. This project serves as a central place to share my skills, work, and contact information.
+El portafolio presenta:
 
-<img width="999" height="793" alt="image" src="https://github.com/user-attachments/assets/b24e0ecf-887e-4e0c-8793-fc8edaf80113" />
+- Sección "About me" con información personal y de experiencia.
+- Sección "Experience" con roles y actividades relevantes.
+- Sección "Projects" con tarjetas de proyectos, enlaces a GitHub y demos en vivo.
+- Sección "Landing Pages" con páginas de destino publicadas.
+- Enlace para descargar el CV en formato PDF.
+- Botón de contacto directo a WhatsApp.
 
-
-## Features
-
-- Responsive personal landing page
-- About me section
-- Experience section
-- Projects section with links to GitHub and live demos
-- Downloadable CV in PDF format
-- Contact button for quick communication
-
-## Technologies Used
+## Tecnologías utilizadas
 
 - HTML5
 - CSS3
+- JavaScript (ES Modules)
 - Google Fonts
 - Devicon icons
-- Static assets for images and favicons
+- Webfonts y favicons
 
-## Project Structure
+## Estructura del proyecto
 
-- index.html: Main structure of the website
-- Style.css: Styles and layout definitions
-- assets/: Images, documents, and favicon files
+- `index.html`: Estructura principal de la página.
+- `Style.css`: Estilos y diseño responsivo.
+- `app.js`: Renderiza las tarjetas de proyectos y landing pages.
+- `data/projects.js`: Datos de los proyectos mostrados en la página.
+- `data/landings.js`: Datos de las landing pages.
+- `assets/`: Imágenes, documentos y favicons.
 
-## Getting Started
+## Uso local
 
-1. Clone this repository.
-2. Open the project folder.
-3. Open index.html in your browser, or serve the project locally with a simple server:
+1. Clona el repositorio.
+2. Abre la carpeta del proyecto.
+3. Abre `index.html` en tu navegador, o ejecuta un servidor local:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then visit:
+4. Visita `http://localhost:8000` en tu navegador.
 
-```text
-https://jdsg.netlify.app/
-```
+## Despliegue
 
-## Deployment
+El sitio es estático y se puede desplegar en plataformas como GitHub Pages, Netlify, Vercel u otros servicios de hosting de contenido estático.
 
-This website can be deployed on GitHub Pages, Netlify, Vercel, or any static hosting platform.
+## Contacto
 
-## Contact
+El botón de contacto en el portafolio redirige a WhatsApp para comunicación directa. También se puede usar la información de contacto incluida en la página.
 
-If you would like to connect, you can use the contact button available in the website or reach out through the links included in the portfolio.
+## Licencia
 
-## License
-
-This project is intended for personal use. Please contact the author before reusing or redistributing the content.
+Proyecto personal. Usa el contenido con fines de referencia y contacta al autor antes de reutilizar o redistribuir el material.
