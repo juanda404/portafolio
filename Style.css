@@ -37,7 +37,7 @@
 
     --radius: 18px;
 
-    --max-width: 1400px;
+    --max-width: 100%; /*1400px*/
 
 }
 
