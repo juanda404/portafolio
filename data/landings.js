@@ -1,6 +1,12 @@
 // data/landings.js
 export const landingsData = [
-{
+  
+    {
+    title: "Walk with Christ — Responsive Catholic Web Application Landing Page",
+    description: "A modern, responsive landing page for spiritual growth, built with semantic HTML5 and advanced CSS3 (Grid & Flexbox). Features clean asymmetrical layouts, local asset optimization, dynamic UI components, and fluid mobile-first responsiveness.",
+    link: "https://diossanto.netlify.app/"
+  },  
+  {
     title: "Guide-quick-gym",
     description: "A simple static website that serves as a personal gym training guide and portfolio landing page. Built with semantic HTML5 and CSS3, focusing on accessibility and clean design.",
     link: "https://guide-quick-gym.netlify.app/"
