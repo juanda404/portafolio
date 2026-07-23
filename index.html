@@ -1,227 +1,202 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- 
+
+<head>
+  <!-- 
     ========================================
     METADATOS ESENCIALES
     ========================================
     -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- SEO Básico -->
-    <title>
-      Juan David Santamaria - Mi Perfil Personal | Desarrollador Web
-    </title>
-    <meta
-      name="description"
-      content="Perfil personal de Juan David. Desarrollador Web en HTML, CSS y las mejores prácticas del desarrollo web moderno."
-    />
-    <meta
-      name="keywords"
-      content="perfil personal, desarrollador web, portfolio, HTML, CSS, desarrollo web"
-    />
-    <meta name="author" content="Juan Santamaria" />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/assets/favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/assets/favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/assets/favicon_io/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/assets/favicon_io/site.webmanifest" />
-    <link rel="stylesheet" href="Style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO Básico -->
+  <title>
+    Juan David Santamaria - Mi Perfil Personal | Desarrollador Web
+  </title>
+  <meta name="description"
+    content="Perfil personal de Juan David. Desarrollador Web en HTML, CSS y las mejores prácticas del desarrollo web moderno." />
+  <meta name="keywords" content="perfil personal, desarrollador web, portfolio, HTML, CSS, desarrollo web" />
+  <meta name="author" content="Juan Santamaria" />
+  <meta name="robots" content="index, follow" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png" />
+  <link rel="manifest" href="/assets/favicon_io/site.webmanifest" />
+  <link rel="stylesheet" href="Style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="container">
-    <header class="navbar item1">
-      <div class="navbar__brand">
-        <h1 class="navbar__name">Juan David Santamaria</h1>
-        <p class="navbar__subtitle" role="doc-subtitle">Frontend Engineer</p>
-        <a class="skip-link" href="#main-content">Menu</a>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="container">
+  <header class="navbar item1">
+    <div class="navbar__brand">
+      <h1 class="navbar__name">Juan David Santamaria</h1>
+      <p class="navbar__subtitle" role="doc-subtitle">Frontend Engineer</p>
+      <a class="skip-link" href="#main-content">Menu</a>
+    </div>
+    <nav aria-label="Menú principal" class="navbar__menu">
+      <ul>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#landing-pages">Landing Pages</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="https://blogjdsg.netlify.app/">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+  <aside class="hard__skills item2" aria-labelledby="hard-skills-heading">
+    <h2 class="hard-skills__title" id="hard-skills-heading">Hard Skills</h2>
+
+    <div class="hard-skills__category">
+      <h3>Frontend</h3>
+
+      <div class="hard-skills__badges">
+        <span><i class="devicon-html5-plain colored"></i> HTML5</span>
+
+        <span><i class="devicon-css3-plain colored"></i> CSS3</span>
+
+        <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+
+        <span><i class="devicon-react-original colored"></i> React</span>
+
+        <span><i class="devicon-tailwindcss-original colored"></i> Tailwind</span>
       </div>
-      <nav aria-label="Menú principal" class="navbar__menu">
-        <ul>
-          <li><a href="#about">About me</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Project</a></li>
-          <li><a href="#landing-pages">Landing Pages</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="https://blogjdsg.netlify.app/">Blog</a></li>
-        </ul>
-      </nav>
-    </header>
-    <aside class="hard__skills item2" aria-labelledby="hard-skills-heading">
-      <h2 class="hard-skills__title" id="hard-skills-heading">Hard Skills</h2>
+    </div>
 
-      <div class="hard-skills__category">
-        <h3>Frontend</h3>
+    <div class="hard-skills__category">
+      <h3>Backend</h3>
 
-        <div class="hard-skills__badges">
-          <span><i class="devicon-html5-plain colored"></i> HTML5</span>
+      <div class="hard-skills__badges">
+        <span><i class="devicon-csharp-plain colored"></i> C#</span>
 
-          <span><i class="devicon-css3-plain colored"></i> CSS3</span>
-
-          <span
-            ><i class="devicon-javascript-plain colored"></i> JavaScript</span
-          >
-
-          <span><i class="devicon-react-original colored"></i> React</span>
-
-          <span
-            ><i class="devicon-tailwindcss-original colored"></i> Tailwind</span
-          >
-        </div>
+        <span><i class="devicon-dot-net-plain colored"></i> .NET</span>
       </div>
+    </div>
 
-      <div class="hard-skills__category">
-        <h3>Backend</h3>
+    <div class="hard-skills__category">
+      <h3>Database</h3>
 
-        <div class="hard-skills__badges">
-          <span><i class="devicon-csharp-plain colored"></i> C#</span>
-
-          <span><i class="devicon-dot-net-plain colored"></i> .NET</span>
-        </div>
+      <div class="hard-skills__badges">
+        <span><i class="devicon-microsoftsqlserver-plain colored"></i> SQL
+          Server</span>
       </div>
+    </div>
 
-      <div class="hard-skills__category">
-        <h3>Database</h3>
+    <div class="hard-skills__category">
+      <h3>Tools</h3>
 
-        <div class="hard-skills__badges">
-          <span
-            ><i class="devicon-microsoftsqlserver-plain colored"></i> SQL
-            Server</span
-          >
-        </div>
+      <div class="hard-skills__badges">
+        <span><i class="devicon-git-plain colored"></i> Git</span>
+
+        <span><i class="devicon-github-original"></i> GitHub</span>
+
+        <span><i class="devicon-vscode-plain colored"></i> VS Code</span>
+
+        <span><i class="devicon-vitejs-plain colored"></i> Vite</span>
       </div>
-
-      <div class="hard-skills__category">
-        <h3>Tools</h3>
-
-        <div class="hard-skills__badges">
-          <span><i class="devicon-git-plain colored"></i> Git</span>
-
-          <span><i class="devicon-github-original"></i> GitHub</span>
-
-          <span><i class="devicon-vscode-plain colored"></i> VS Code</span>
-
-          <span><i class="devicon-vitejs-plain colored"></i> Vite</span>
-        </div>
-      </div>
-    </aside>
-    <main class="item3" id="main-content">
-      <section class="about" id="about" aria-labelledby="about-heading">
-        <figure class="about__figure">
-          <img
-            class="about__image"
-            src="assets/devjdsg1.png"
-            alt="Juan David frente a su computador"
-            width="200"
-            height="200"
-          />
-          <figcaption class="about__text">Juan programando</figcaption>
-        </figure>
-        <div class="about__content">
-          <h2 class="about__title" id="about-heading">About me</h2>
-          <p class="about__text">
-            I'm Juan David, a <strong>Frontend Developer</strong> passionate
-            about creating modern web experiences.... Currently, I'm a Junior
-            Front-End Engineer at AOS, working on a project basic. I contribute
-            to the updating the Fogafin website, which is managed by the
-            Sitefinity CMS. In the past, I had the opportunity to work at the
-            Office of the secretary of Mobility in Cali, where I simultanously
-            developed software as a freelancer for a personal project. In my
-            spare time, I'm usually go to the gym,read,listen to music, or watch
-            movies at home. On weekends,I enjoy mountain biking.
-          </p>
-        </div>
-      </section>
-      <section
-        class="experience"
-        id="experience"
-        aria-labelledby="experience-heading"
-      >
-        <h2 class="experience__title" id="experience-heading">Experience</h2>
-        <div class="experience__item">
-          <h3 class="experience__role">Frontend Developer</h3>
-          <!-- Las fechas no son encabezados: <time> es lo semánticamente correcto -->
-          <p class="experience__date">
-            <time datetime="2024-01">Jan 2024 - Present</time>
-          </p>
-          <p class="experience__descripcion">
-            Building responsive interfaces with React and Tailwind CSS. Focused
-            on clean code and good UX.
-          </p>
-        </div>
-
-        <div class="experience__item">
-          <h3 class="experience__role">Developer</h3>
-          <p><time datetime="2024-01/2024-11">January - November 2024</time></p>
-          <p class="experience__descripcion">
-            Learning frontend technologies including HTML, CSS, JavaScript, and
-            React through projects and online resources.
-          </p>
-        </div>
-      </section>
-<section class="projects" id="projects" aria-labelledby="projects-heading">
-  <h2 class="projects__title" id="projects-heading">Projects</h2>
-  <p class="projects__intro">A showcase of web applications and digital solutions built with modern frontend technologies.</p>
-  
-  <!-- El contenedor ahora queda totalmente vacío -->
-  <div class="projects__list" id="projects-list"></div>
-</section>
-
-<section class="landing-pages" id="landing-pages" aria-labelledby="landing-pages-heading">
-  <h2 class="landing-pages__title" id="landing-pages-heading">Landing Pages Collection</h2>
-  <p class="landing-pages__intro">
-    A growing collection of landing pages I’ll be creating over time as I keep practicing design, structure, and conversion-focused interfaces.
-  </p>
-  
-  <div class="landing-pages__list" id="landing-pages-list"></div>
-</section>
-
-      <section class="resume" id="resume" aria-labelledby="resume-heading">
-        <h2 class="resume__title" id="resume-heading">Resume</h2>
-        <p class="resume__text">
-          You can view or dowload my resume in PDF format by clicking the button
-          below.
+    </div>
+  </aside>
+  <main class="item3" id="main-content">
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <figure class="about__figure">
+        <img class="about__image" src="assets/devjdsg1.png" alt="Juan David frente a su computador" width="200"
+          height="200" />
+        <figcaption class="about__text">Juan programando</figcaption>
+      </figure>
+      <div class="about__content">
+        <h2 class="about__title" id="about-heading">About me</h2>
+        <p class="about__text">
+          I'm Juan David, a <strong>Frontend Developer</strong> passionate
+          about creating modern web experiences.... Currently, I'm a Junior
+          Front-End Engineer at AOS, working on a project basic. I contribute
+          to the updating the Fogafin website, which is managed by the
+          Sitefinity CMS. In the past, I had the opportunity to work at the
+          Office of the secretary of Mobility in Cali, where I simultanously
+          developed software as a freelancer for a personal project. In my
+          spare time, I'm usually go to the gym,read,listen to music, or watch
+          movies at home. On weekends,I enjoy mountain biking.
         </p>
-        <a
-          class="resume__link"
-          href="/assets/documents/CVJDSG1.pdf"
-          download
-          aria-label="Descargar CV en PDF"
-        >
-          <span aria-hidden="true">📄</span> CV
-        </a>
-      </section>
-      <button class="button">
-        <a target="_blank" href="https://wa.me/573003617203">Contactame</a>
-      </button>
-    </main>
-    <footer class="item4">
-      <p>© 2026 Juan David. Built with HTML & CSS</p>
-    </footer>
-    <script type="module" src="./app.js"></script>
-  </body>
+      </div>
+    </section>
+    <section class="experience" id="experience" aria-labelledby="experience-heading">
+      <h2 class="experience__title" id="experience-heading">Experience</h2>
+      <div class="experience__item">
+        <h3 class="experience__role">Frontend Developer</h3>
+        <!-- Las fechas no son encabezados: <time> es lo semánticamente correcto -->
+        <p class="experience__date">
+          <time datetime="2024-01">Jan 2024 - Present</time>
+        </p>
+        <p class="experience__descripcion">
+          Modern Frontend: Application development using React, JavaScript, TypeScript, HTML5, and CSS3, applying
+          reusable components and frontend best practices.
+          Responsive Design & UX: Building adaptable interfaces focused on user experience, utilizing tools like
+          Tailwind CSS and React Router.
+          Logic & Integration: Consuming REST APIs, state management, navigation, and business logic implementation on
+          the frontend.
+          Version Control & Deployment: Code management using Git and GitHub, along with deploying web applications on
+          platforms like Netlify.
+          Practical Projects: Building personal projects focused on solving real needs, strengthening frontend
+          architecture, performance optimization , and code quality.
+        </p>
+      </div>
+
+      <div class="experience__item">
+        <h3 class="experience__role">Developer</h3>
+        <p><time datetime="2024-01/2024-11">January - November 2024</time></p>
+        <p class="experience__descripcion">
+          Institutional Web Development: Developed and maintained features using HTML, CSS, and JavaScript within a .NET
+          environment.
+          Content & CMS Management: Managed and updated site content using Sitefinity CMS, ensuring platform
+          availability and optimal performance.
+          Troubleshooting & Support: Diagnosed and resolved production issues, providing continuous maintenance to
+          improve system stability and performance.
+          User Support & Collaboration: Handled user-reported incidents and collaborated directly with clients to
+          enhance user experience and service quality.
+        </p>
+      </div>
+    </section>
+    <section class="projects" id="projects" aria-labelledby="projects-heading">
+      <h2 class="projects__title" id="projects-heading">Projects</h2>
+      <p class="projects__intro">A showcase of web applications and digital solutions built with modern frontend
+        technologies.</p>
+
+      <!-- El contenedor ahora queda totalmente vacío -->
+      <div class="projects__list" id="projects-list"></div>
+    </section>
+
+    <section class="landing-pages" id="landing-pages" aria-labelledby="landing-pages-heading">
+      <h2 class="landing-pages__title" id="landing-pages-heading">Landing Pages Collection</h2>
+      <p class="landing-pages__intro">
+        A growing collection of landing pages I’ll be creating over time as I keep practicing design, structure, and
+        conversion-focused interfaces.
+      </p>
+
+      <div class="landing-pages__list" id="landing-pages-list"></div>
+    </section>
+
+    <section class="resume" id="resume" aria-labelledby="resume-heading">
+      <h2 class="resume__title" id="resume-heading">Resume</h2>
+      <p class="resume__text">
+        You can view or dowload my resume in PDF format by clicking the button
+        below.
+      </p>
+      <a class="resume__link" href="/assets/documents/CVJDSG1.pdf" download aria-label="Descargar CV en PDF">
+        <span aria-hidden="true">📄</span> CV
+      </a>
+    </section>
+    <button class="button">
+      <a target="_blank" href="https://wa.me/573003617203">Contactame</a>
+    </button>
+  </main>
+  <footer class="item4">
+    <p>© 2026 Juan David. Built with HTML & CSS</p>
+  </footer>
+  <script type="module" src="./app.js"></script>
+</body>
+
 </html>
